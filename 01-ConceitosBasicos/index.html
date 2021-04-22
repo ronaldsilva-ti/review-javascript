@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // Variaveis -> Recipientes para declarar valores.
+        var nome = 'Ronald';
+        console.log(nome);
+
+        var idade = 20;
+        var total = idade + 20;
+        total = 40;
+        console.log(total);
+
+
+
+        // Strings  - Textos
+        var language = 'JavaScript';
+
+        //Tamanho da string
+        console.log(language.length)
+        // Maiusculo
+        console.log(language.toLocaleUpperCase())
+        //Minusculo
+        console.log(language.toLocaleLowerCase())
+
+        //Procurar a posição que o valor se encontra, se não tiver é -1
+        console.log(language.indexOf('Scrip'));
+
+        //Alterar caracteres da String
+        console.log(language.replace('Script',''))
+
+        // Pela posição trazer a palavra que eu quero
+        console.log(language.slice(0,3))
+
+        // Se tiver espaços inicias e finais, remove
+        var nomePai = '      Carlos Alves'
+        console.log(nomePai.trim());
+
+        // Juntar Strings
+        console.log('O ' + nomePai.trim() + ' programa em ' + language)
+
+        console.log(`O ${nomePai.trim()} gosta de programar em ${language}`)
+
+
+        // Operadores Matematicos
+
+        //Adição
+        console.log(10 + 6)
+        //Subtração
+        console.log(50 - 10);
+        //Multiplicação
+        console.log(10 * 20)
+        //Divisão
+        console.log(10 / 5)
+        //Exponenciação
+        console.log(7 ** 2);
+
+        var a = 10;
+        var b = 18;
+        console.log(a + b);
+
+        //Modulo -> resto da divisão
+        console.log( 10 % 2);
+        console.log(10 % 3);
+        console.log(10 % 4);
+
+        // Incremento
+
+        var a = 1;
+        // a = a + 1
+        a++;
+
+        // ++ depois do A vai executar por ultimo a soma
+        // vai dar o resultado da soma so se eu der console.log apóa a linha do ++
+
+        console.log(++a)
+
+        //Decremento
+        console.log(--a)
+
+
+
+        //Boolean - true e false
+        var a = true;
+        console.log(a);
+
+        var b = false;
+
+        console.log(b);
+
+        console.log(3 < 5); // 3 é menor que 5? SIM = true
+        console.log(3 > 5); // 3 é maior que 5? NÃO  = false
+        console.log(5 >=5); // 5 é maior ou igual a 5? SIM = true
+        console.log(4 != 5); // 4 é diferente de 5 ? SIM = true
+        console.log(5 == 5); // 5 é igual a 5? SIM = true
+
+        var nome1 = 'Ronald';
+        var nome2 = 'Clara';
+
+        console.log(nome1 == nome2); //Nome1 é igual a Nome2
+
+        // == compara valor final -> é IGUAL?
+        // == compara valor final e tipo. Se é (Boolean,String..) -> é IDENTICO
+
+
+
+        
+
+
+
+
+
+        //Operadores Logicos
+
+        var a = true;
+        var b = false;
+
+
+        // ! -> sinal de negação
+        // !! -> nega duas vezes
+
+        console.log(!a);
+        console.log(b);
+
+        // null, undefined, '', false, 0 são considerados valores  falsos
+        //Outros valores são TRUE
+
+        console.log(!null)
+        console.log(!!b);
+        console.log(!0);
+
+
+        // && -> AND 
+
+
+        //Se true retorna ultimo valor, se false retorna o primeiro valor que é false
+        console.log('10' && 10 && 'TESTE');
+        console.log(false && 'Teste');
+        console.log(10 > 5 && 7 < 10 );
+        console.log(10 > 5 && 7 > 30 );
+
+        // || -> OU
+
+
+        // se tiver um verdadeiro retorna ultimo verdadeiro
+        // se tiver um falso retorna ultimo false
+        console.log(10 || '');
+        console.log(0 || null)
+
+
+
+        // IF, ELSE IF e ELSE
+
+        if(true){
+            console.log(true)
+        }
+
+        if(false){
+            console.log(false)
+        }
+
+        if(3 > 4){
+            console.log('3 > 4')
+        }
+
+        if(true) console.log('TRUE')
+
+
+        if(!''){
+            console.log('TRUE')
+        }else{
+            console.log('FALSE')
+        }
+
+
+
+        var number = 2020;
+
+        if(number === 20){
+            console.log('20')
+        }else if(number === 1){
+            console.log('1')
+        }else{
+            console.log(2020)
+        }
+
+
+
+        // Operadores ternarios
+        // Forma curta de IF e ELSE.
+
+        var a = true;
+        console.log(a === true ? "RONALD" : 'CARLOS');
+
+
+        // SWICTH e CASE
+
+        var cor = 'amarelo'
+
+        switch(cor){
+            case 'azul':
+                console.log('azul');
+                break; //se for azul para a execução
+            case 'verde':
+                console.log('verde');
+                break;
+            case 'amarelo':
+                console.log('amarelo')
+                break;
+            default: // caso não tenha passado em nenhum CASE
+                console.log('Não tem')
+        }
+
+
+        switch(cor){
+            case 'vermelho':
+            case 'amarelo':
+            case 'verder':
+                console.log('COR QUENTE');
+                break;
+
+            case 'blue':
+            case 'yellow':
+            case 'green':
+                console.log('COLORS IN ENGLISH');
+                break;
+
+        }
+
+        //ARRAY -> Tipo de valor que permite guardar varios outros valors, como uma lista
+        var numeros = [5, 3, 12, 17, 10,99];
+        console.log(numeros)
+
+        console.log(numeros[2]); //Pegar valor em uma posição especifica
+        console.log(numeros.length)//Quantidade de elementos nesse array
+
+        // pop() -> remove o ultimo elemento do array e retorna esse valor 
+        console.log(numeros.pop());
+        console.log(numeros);
+
+        // slice -> retorna fatia do array slice(posicaoInicial, posicaoFinal);
+        console.log(numeros.slice(0,2));
+        console.log(numeros.slice(3));//Dessa posição adiante
+
+        //join() -> junta os elementos coloca um separador e transforma em uma string
+        console.log(numeros.join('-'));
+        console.log(numeros.join(' '));
+
+
+        var usuario = [
+            'Ronald',
+            19,
+            2020,
+            'Brasileiro'
+        ]
+        console.log(usuario)
+
+        // push() -> adiciona um novo valor no array, final
+        usuario.push('MG')
+        console.log(usuario)
+
+        // includes() -> verificar se valor existe dentro do array
+
+        console.log(usuario.includes('MG'));
+        console.log(usuario.includes('RJ'));
+
+
+        // indexOf -> se encontrar retorna a posição no array se não -1
+        console.log(usuario.indexOf('2018'));
+        console.log(usuario.indexOf(2020));
+
+        // concat -> Juntar dois arrays
+
+        var arr1 = [3,2,1]
+        var arr2  = ['Ronald', 'Programador', 'Front-End'];
+        var arr3  = ['Remoto'];
+
+        var resultado = arr1.concat(arr2).concat(arr3).concat(['Há um ano']);
+        console.log(resultado);
+
+    
+        // ... -> spread = espalhar
+        console.log([...arr1,...arr2, ...[1.2,2.3]])
+
+        // Desestructure -> Desestrutuação
+
+        var nome = usuario[0];
+        console.log(nome)
+
+        var [nome, idade,ano] = usuario;
+
+        // na variavel nome vai ser armazenado na posição o que no caso é o valor = 'Ronald'
+
+
+        console.log(nome, idade,ano)
+
+    </script>
+</body>
+</html>
